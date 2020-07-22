@@ -66,6 +66,9 @@ body {
     background-color: #1F1A12;
     display: none;
 }
+.links {
+    display: block;
+}
 .infoBin {
     align-content: center;
     text-align: center;
