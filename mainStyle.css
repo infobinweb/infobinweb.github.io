@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background-color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    position: fixed;
+    width:100%;
+}
+.logo {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 30px;
+}
+.logoLink {
+    text-decoration: none;
+    color: black;
+}
+.smallL {
+    font-size: 23px;
+    font-weight: bold;
+}
+.nav-links {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    transition: opacity 2s, font-size 5s;
+}
+.nav-links a:hover {
+    opacity: 0.7;
+}
+.menu {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar {
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+#responsiveNav {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    background-color: #1F1A12;
+    display: none;
+}
+.infoBin {
+    align-content: center;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+.channel {
+    background-color: #9C2921;
+    border-radius: 50px;
+    border: 0px;
+    padding: 30px;
+    font-family: 'Rowdies', cursive;
+    font-size: 30px;
+    width: 450px;
+    color: white;
+    transition: width 2s;
+    animation: moveAround 5s infinite;
+}
+.channel:hover {
+    width: 500px;
+    cursor: pointer;
+}
+.who {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+}
+.captionWho {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    font-size: 17px;
+}
+#contributes {
+    background-color: #081E21;
+    padding: 100px;
+}
+@keyframes moveAround {
+    0% {background-color: #9C2921;}
+    50% {background-color: chocolate;}
+    100% {background-color: #9E0701;}
+}
+@media (max-width: 1000px) {
+    .menu {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+    .channel {
+        width: 200px;
+        font-size: 10px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .who {
+        font-size: 30px;
+    }
+}
